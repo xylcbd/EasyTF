@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\easytf">
+      <UniqueIdentifier>{73d926fc-bb98-4d55-b415-c7e89e496387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\easytf\operators">
+      <UniqueIdentifier>{8f3ab660-797a-4fa0-bb6c-07ae11e34290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\operators">
+      <UniqueIdentifier>{e2ba75fa-daeb-4f9d-bf75-606426c2c248}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\easytf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_lstm.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\any.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\param.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_fullconnect.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_softmax.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_relu.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_sigmoid.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_tanh.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_recurrent.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_elementwise.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_concat.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_reverse.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_hardsigmoid.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_gru.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_convolution.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_pooling.cpp">
+      <Filter>Source Files\operators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\easytf_assert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\easytf_logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\easytf\base.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\shape.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\utils.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\easytf.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\param.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\any.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operator.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_lstm.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\entity.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_fullconnect.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_softmax.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_relu.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_sigmoid.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_tanh.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_recurrent.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_elementwise.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_reverse.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_concat.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_hardsigmoid.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_gru.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_convolution.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_pooling.h">
+      <Filter>Header Files\easytf\operators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\easytf_assert.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\easytf_logger.h">
+      <Filter>Header Files\easytf</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

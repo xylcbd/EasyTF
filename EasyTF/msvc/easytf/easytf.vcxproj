@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4DFAAC71-C347-46B5-A2A1-79CC969B0B58}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>easytf</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include;C:\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include;C:\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\any.cpp" />
+    <ClCompile Include="..\..\src\entity.cpp" />
+    <ClCompile Include="..\..\src\operators\op_concat.cpp" />
+    <ClCompile Include="..\..\src\operators\op_convolution.cpp" />
+    <ClCompile Include="..\..\src\operators\op_elementwise.cpp" />
+    <ClCompile Include="..\..\src\operators\op_fullconnect.cpp" />
+    <ClCompile Include="..\..\src\operators\op_gru.cpp" />
+    <ClCompile Include="..\..\src\operators\op_hardsigmoid.cpp" />
+    <ClCompile Include="..\..\src\operators\op_lstm.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\operators\op_pooling.cpp" />
+    <ClCompile Include="..\..\src\operators\op_recurrent.cpp" />
+    <ClCompile Include="..\..\src\operators\op_relu.cpp" />
+    <ClCompile Include="..\..\src\operators\op_reverse.cpp" />
+    <ClCompile Include="..\..\src\operators\op_sigmoid.cpp" />
+    <ClCompile Include="..\..\src\operators\op_softmax.cpp" />
+    <ClCompile Include="..\..\src\operators\op_tanh.cpp" />
+    <ClCompile Include="..\..\src\param.cpp" />
+    <ClCompile Include="..\..\src\shape.cpp" />
+    <ClCompile Include="..\..\src\easytf_assert.cpp" />
+    <ClCompile Include="..\..\src\easytf_logger.cpp" />
+    <ClCompile Include="..\..\src\easytf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\easytf\any.h" />
+    <ClInclude Include="..\..\include\easytf\base.h" />
+    <ClInclude Include="..\..\include\easytf\entity.h" />
+    <ClInclude Include="..\..\include\easytf\operator.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_concat.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_convolution.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_elementwise.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_fullconnect.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_gru.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_hardsigmoid.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_lstm.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\include\easytf\operators\op_pooling.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_recurrent.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_relu.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_reverse.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_sigmoid.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_softmax.h" />
+    <ClInclude Include="..\..\include\easytf\operators\op_tanh.h" />
+    <ClInclude Include="..\..\include\easytf\param.h" />
+    <ClInclude Include="..\..\include\easytf\shape.h" />
+    <ClInclude Include="..\..\include\easytf\utils.h" />
+    <ClInclude Include="..\..\include\easytf\easytf_assert.h" />
+    <ClInclude Include="..\..\include\easytf\easytf_logger.h" />
+    <ClInclude Include="..\..\include\easytf\easytf.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

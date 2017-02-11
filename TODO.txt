@@ -1,0 +1,6 @@
+1，增加模型导入（自动），模型加密；
+2，优化各种Operator的速度；
+3，优化内存占用；
+4，增加更多的Operator；
+5，增加更多的examples；
+6，提供其他语言的binding（如python）。

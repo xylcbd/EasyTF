@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lstm">
+      <UniqueIdentifier>{de6828ca-11ad-4333-beb2-6611145ffcc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{1a0556f3-6b01-4946-9cec-b5205873218d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\toy">
+      <UniqueIdentifier>{690f1fb3-e638-4bc4-86a9-d58ca17ea090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mnist_mlp">
+      <UniqueIdentifier>{cfc0fd41-d2ac-46d6-ac22-0780545d3068}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\examples\lstm\lstm_main.cpp">
+      <Filter>Source Files\lstm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\common\utils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\toy\toy_main.cpp">
+      <Filter>Source Files\toy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\mnist_mlp\mnist_main.cpp">
+      <Filter>Source Files\mnist_mlp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\common\mnist_data_loader.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\examples\common\utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\lstm\lstm_main.h">
+      <Filter>Source Files\lstm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\toy\toy_main.h">
+      <Filter>Source Files\toy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\mnist_mlp\mnist_mlp.h">
+      <Filter>Source Files\mnist_mlp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\common\mnist_data_loader.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
